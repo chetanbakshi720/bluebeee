@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Blue Bee</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="bluebee_stylepage.css">
+</head>
+
+<body>
+   <nav class="navbar">
+      <div class="navbar-container header-container common-container">
+         <a href="Home.html" class="logo"><img src="logo.png" alt=""></a>
+         <input type="checkbox" name="" id="">
+         <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+         </div>
+         <ul class="menu-items">
+            <li><a class="nav-link" href="Home.html">Home</a></li>
+            <li><a class="nav-link" href="Men.html">Men</a></li>
+            <li><a href="Women.html" class="nav-link">Women</a></li>
+            <li><a href="Kids.html" class="nav-link">Kids</a></li>
+            <li class="mobile-margin"><a class="active" href="AboutUs.html" class="nav-link">About Us</a></li>
+            <li>
+               <div class="search-container nav-link">
+                  <form action="/action_page.php">
+                     <input type="text" placeholder="Search.." name="search">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+               </div>
+            </li>
+            <li><a href="Login.html" class="nav-link">Sign In</a></li>
+            <li><a href="Registration.html" class="nav-link">Sign Up</a></li>
+            <li><a href="Shopping_bag.html" class="nav-link">Bag <i class="fa fa-shopping-bag"></i></a></li>
+         </ul>
+      </div>
+   </nav>
+   <div class="body-section">
+      <section id="inner-header-banner">
+         <div class="header-banner-container common-container"></div>
+      </section>
+      <div class="home-product-category">
+         <h1 class="home-sec1-main-title"><b>ABOUT US</b></h1>
+         <div class="product-container common-container">
+            <div class="faq-tc-about-page">
+               <p>With the trendiest, freshest, and most unique styles from across India and the world, Bluebee invites you to
+                  express your personal style fearlessly, and with a confidence and optimism that cannot be easily shaken.</p>
+              
+                <p>Bluebee OWN is our private label – that’s designed by us, and owned by you. If you’re looking for head-turning
+                  styles that are one-of-a-kind, Bluebee OWN is what you should stock up on.</p>
+              
+                <p>We bring you the trendiest and most exclusive brands from around the world to your wardrobe. Forget scouring the
+                  net for what’s hot globally, we’ve got you covered.</p>
+              
+                <p>If there’s an occasion to express your personal style, we’ve got a capsule collection to match. Shopping for a
+                  specific mood, event or style story has never been easier.</p>
+              
+                <p>Our Indie styles are literally art you can wear. They are carefully handpicked, so that only the most authentic,
+                  handcrafted pieces by artisans across the country and globe make the cut.</p>
+              
+                <p>A high-fashion editorial where we feature the internet’s coolest cats. It’s where you get to read the stories of
+                  these influencers and shop their stunning shoot looks.</p>
+              
+                <p>Our daily trend spotlight that lets you in on what’s hip and happening, and what you should be carting right now.
+                  Like they say, a trend each day keeps the blues away!</p>
+              
+                <p>From the hailstorm of trends coming down on us every season, we only recommend the ones guaranteed to put you on
+                  the hit list. Watch out for these regular highlights.</p>
+              
+                <p>This is where we celebrate and showcase our most stylish customers, who’ve given us a shout-out on social while
+                  dressed in a trendy Bluebee style. You could very well be on the list too.</p>
+            </div>
+         </div>
+      </div>
+      <div class="innerpage-footer-space"></div>
+   </div>
+   <div class="footer">
+      <div class="footer-container">
+         <div class="column-footer">
+            <h3><b>Navigation</b></h3>
+            <ul>
+               <li><a href="Home.html">Home</a></li>
+               <li><a href="Men.html">Men</a></li>
+               <li><a href="Women.html">Women</a></li>
+               <li><a href="Kids.html">Kids</a></li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Useful Links</b></h3>
+            <ul>
+               <li><a href="AboutUs.html" class="active">About Us</a></li>
+               <li><a href="FAQ.html">FAQ's</a></li>
+               <li><a href="Terms&conditons.html">Terms & Conditions</a></li>
+               <li><a href="#">Return Policy</a></li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Follow Us</b></h3>
+            <ul>
+               <li><a href="https://www.facebook.com/" target="_blank" class="fa social fa-facebook"></a>
+                  <a href="https://twitter.com/login" target="_blank" class="fa social fa-twitter"></a>
+               </li>
+               <li><a href="https://www.instagram.com/?nocaa=1&refsrc=deprecated" target="_blank"
+                     class="fa social fa-instagram"></a>
+                  <a href="https://www.linkedin.com/signup" target="_blank" class="fa social fa-linkedin"></a>
+               </li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Contact Details</b></h3>
+            <ul>
+               <li><a href="#" class="fa contact-fa fa-map-marker"></a>12, Building Name, Street Name, City, Country -
+                  Zipcode</li>
+               <li><a href="tel:123 456 789" class="fa contact-fa fa-phone"></a><a href="tel:123 456 789">123 456
+                     789</a></li>
+               <li><a href="mailto:infobluebee@gmail.com" class="fa contact-fa fa-envelope"></a><a
+                     href="mailto:infobluebee@gmail.com">infobluebee@gmail.com</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+         hamburger.classList.toggle("active");
+         navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+         hamburger.classList.remove("active");
+         navMenu.classList.remove("active");
+      }
+   </script>
+</body>
+
+</html>

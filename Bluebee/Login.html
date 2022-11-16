@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blue Bee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bluebee_stylepage.css">
+    <script type="text/javascript" src="Javascript.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container header-container common-container">
+            <a href="#default" class="logo"><img src="logo.png" alt=""></a>
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a class="nav-link" href="Home.html">Home</a></li>
+                <li><a class="nav-link" href="Men.html">Men</a></li>
+                <li><a href="Women.html" class="nav-link">Women</a></li>
+                <li><a href="Kids.html" class="nav-link">Kids</a></li>
+                <li class="mobile-margin"><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                <li>
+                    <div class="search-container nav-link">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+                <li><a href="Login.html" class="active nav-link">Sign In</a></li>
+                <li><a href="Registration.html" class="nav-link">Sign Up</a></li>
+                <li><a href="Shopping_bag.html" class="nav-link">Bag <i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body-section">
+        <section id="inner-header-banner">
+            <div class="header-banner-container common-container"></div>
+        </section>
+        <div class="thank-you-page">
+            <div class="login-page">
+                <h1 class="bag-page-title">Welcom To <span class="bag-page-title-highlight">Bluebee</span></h1>
+                <div class="product-container common-container">
+                    <div class="login-content">
+                        <h2>Log In using</h2>
+                        <div class="login-images">
+                            <a href="https://www.facebook.com/" target="_blank"><img class="facebook-img"
+                                    src="Login\facebook.jpeg"></a>
+                            <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                target="_blank"><img class="google-img" src="Login\google.jpeg"></a>
+                        </div>
+                        <p class="login-text">Or</p>
+                        <div class="login-body-inner-content">
+                            <form name="loginform" action="" onsubmit="return validateloginform()">
+                                <h2>Enter Mobile Number / Email*</h2><br><br>
+                                <input type="text" name="usrname" id="usrname" placeholder="Email / Mobile No."
+                                    class="checkout_text1" required>
+                                <input type="password" name="psw" id="psw" placeholder="Password" class="checkout_text1"
+                                    required><br>
+
+                                <input type="submit" value="CONTINUE" class="login-btn"></input>
+                                <br><br>
+                                <input type="checkbox" id="gender4" name="t&c" value="TandC" required>
+                                <label for="gender4" class="last-instruction">By sign in, I agree to Tearms and
+                                    Conditions.</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="innerpage-footer-space"></div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="column-footer">
+                <h3><b>Navigation</b></h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a class="active" href="Men.html">Men</a></li>
+                    <li><a href="Women.html">Women</a></li>
+                    <li><a href="Kids.html">Kids</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3><b>Useful Links</b></h3>
+                <ul>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="FAQ.html">FAQ's</a></li>
+                    <li><a href="Terms&conditons.html">Terms & Conditions</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3><b>Follow Us</b></h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="fa social fa-facebook"></a>
+                        <a href="https://twitter.com/login" target="_blank" class="fa social fa-twitter"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/?nocaa=1&refsrc=deprecated" target="_blank"
+                            class="fa social fa-instagram"></a>
+                        <a href="https://www.linkedin.com/signup" target="_blank" class="fa social fa-linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3><b>Contact Details</b></h3>
+                <ul>
+                    <li><a href="#" class="fa contact-fa fa-map-marker"></a>12, Building Name, Street Name, City,
+                        Country -
+                        Zipcode</li>
+                    <li><a href="tel:123 456 789" class="fa contact-fa fa-phone"></a><a href="tel:123 456 789">123 456
+                            789</a></li>
+                    <li><a href="mailto:infobluebee@gmail.com" class="fa contact-fa fa-envelope"></a><a
+                            href="mailto:infobluebee@gmail.com">infobluebee@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        /* Script for review Form */
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Blue Bee</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="bluebee_stylepage.css">
+</head>
+
+<body>
+   <nav class="navbar">
+      <div class="navbar-container header-container common-container">
+         <a href="Home.html" class="logo"><img src="logo.png" alt=""></a>
+         <input type="checkbox" name="" id="">
+         <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+         </div>
+         <ul class="menu-items">
+            <li><a class="nav-link" href="Home.html">Home</a></li>
+            <li><a class="nav-link" href="Men.html">Men</a></li>
+            <li><a href="Women.html" class="nav-link">Women</a></li>
+            <li><a href="Kids.html" class="nav-link">Kids</a></li>
+            <li class="mobile-margin"><a href="AboutUs.html" class="nav-link">About Us</a></li>
+            <li>
+               <div class="search-container nav-link">
+                  <form action="/action_page.php">
+                     <input type="text" placeholder="Search.." name="search">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+               </div>
+            </li>
+            <li><a href="Login.html" class="nav-link">Sign In</a></li>
+            <li><a href="Registration.html" class="nav-link">Sign Up</a></li>
+            <li><a href="Shopping_bag.html" class="nav-link">Bag <i class="fa fa-shopping-bag"></i></a></li>
+         </ul>
+      </div>
+   </nav>
+   <div class="body-section">
+      <section id="inner-header-banner">
+         <div class="header-banner-container common-container">
+         </div>
+      </section>
+      <div class="home-product-category">
+         <h1 class="bag-page-title">Checkout <i class="fa fa-shopping-bag bag-bag"></i></h1>
+         <div class="product-container common-container">
+            <table class="bag-body-content checkout_table">
+               <tr class="checkout_table_title">
+                  <td>Image</td>
+                  <td>Name</td>
+                  <td>Price</td>
+               </tr>
+               <tr class="checkout_table_description">
+                  <td class="first_part"> <img src="Product_detail/men_product_detail_1.jpg" alt=""></td>
+                  <td class="second_part">
+                     <div class="second-part-product-description">
+                        <span>BlackBerry</span> <br>
+                        <span>Men Gray Classic Regular Fit Solid Formal shirt</span>
+                        <div class="quantity">
+                           <span class="desc">
+                              Quantity
+                              <span class="icon"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                              <span class="dot">
+                                 <div class="circle-txt">1</div>
+                              </span>
+                              <span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                           </span>
+                        </div>
+                        <div class="quantity">
+                           <span class="size desc">SIZE </span>
+                           <span class="dot">
+                              <div class="circle-txt">38</div>
+                           </span>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="third_part">
+                     <div class="checkout-description">
+                        <span>INR 2519 /-</span><br>
+                        <span>Shipping charges &nbsp;0.00 </span><br>
+                        <span>Apply Coupon Code </span><br>
+                        <span class="checkout_text"><input type="text" name="Coupon_code"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>
+                     <div class="payable_amount">
+                        <span class="pay-highlight">Total Payable Amount</span> &nbsp; <span>(inclusive of all
+                           taxes)</span>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="total_amount">
+                        <span>INR 2519 /-</span>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <br><br><br><br>
+         <div class="product-discount-container common-container">
+            
+               <table class="checkout-box shipping-details">
+
+                  <tr>
+                     <td colspan="2" class="checkout-box-title">Shipping Details</td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" name="first_name" placeholder="First name" required></td>
+                     <td><input type="text" name="last_name" placeholder="Last name" required></td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" name="email" placeholder="Email" required></td>
+                     <td><input type="text" name="phone" placeholder="Phone no." required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" class="checkout-box-title" required>Address</td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" name="appartment_no" placeholder="Appartment No." required></td>
+                     <td><input type="text" name="street" placeholder="Street" required></td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" name="country" placeholder="Country" required></td>
+                     <td><input type="text" name="city" placeholder="City" required></td>
+                  </tr>
+                  <tr>
+                     <td class="last-tr"><input type="text" name="landmark" placeholder="Nearest Landmark" required>
+                     </td>
+                     <td class="last-tr"><input type="text" name="pin_code" placeholder="Pin code" required></td>
+                  </tr>
+               </table>
+               <table class="checkout-box payment-details">
+                  <tr>
+                     <td colspan="2" class="checkout-box-labels">Payment Details</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" class="checkout-box-fieldname">We accept credit/debit Cards</td>
+                  </tr>
+                  <tr>
+                     <td class=""> Card No <input type="text" name="pin_code" class="" required></td>
+                  </tr>
+                  <tr>
+                     <td class=""> Name on Card <input type="text" name="pin_code" required></td>
+                  </tr>
+                  <tr>
+                     <td class=""> End Date (mm/yy) <input type="text" name="pin_code" required></td>
+                  </tr>
+                  <tr>
+                     <td class=""> Start Date (mm/yy)<input type="text" name="pin_code" required></td>
+                  </tr>
+                  <tr>
+                     <td class=""> CVV No<input type="text" name="pin_code" required></td>
+                  </tr>
+                  <tr>
+                     <td class="" colspan="2"><a href="Thank_you.html" class="login-btn">PROCEED TO PAY</a></td>
+                  </tr>
+               </table>
+         
+   
+         </div>
+         
+      </div>
+      <div class="innerpage-footer-space"></div>
+   </div>
+
+
+
+
+   <div class="footer">
+      <div class="footer-container">
+         <div class="column-footer">
+            <h3><b>Navigation</b></h3>
+            <ul>
+               <li><a href="Home.html">Home</a></li>
+               <li><a class="active" href="Men.html">Men</a></li>
+               <li><a href="Women.html">Women</a></li>
+               <li><a href="Kids.html">Kids</a></li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Useful Links</b></h3>
+            <ul>
+               <li><a href="AboutUs.html">About Us</a></li>
+               <li><a href="FAQ.html">FAQ's</a></li>
+               <li><a href="Terms&conditons.html">Terms & Conditions</a></li>
+               <li><a href="#">Return Policy</a></li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Follow Us</b></h3>
+            <ul>
+               <li><a href="https://www.facebook.com/" target="_blank" class="fa social fa-facebook"></a>
+                  <a href="https://twitter.com/login" target="_blank" class="fa social fa-twitter"></a>
+               </li>
+               <li><a href="https://www.instagram.com/?nocaa=1&refsrc=deprecated" target="_blank"
+                     class="fa social fa-instagram"></a>
+                  <a href="https://www.linkedin.com/signup" target="_blank" class="fa social fa-linkedin"></a>
+               </li>
+            </ul>
+         </div>
+         <div class="column-footer">
+            <h3><b>Contact Details</b></h3>
+            <ul>
+               <li><a href="#" class="fa contact-fa fa-map-marker"></a>12, Building Name, Street Name, City,
+                  Country -
+                  Zipcode</li>
+               <li><a href="tel:123 456 789" class="fa contact-fa fa-phone"></a><a href="tel:123 456 789">123 456
+                     789</a></li>
+               <li><a href="mailto:infobluebee@gmail.com" class="fa contact-fa fa-envelope"></a><a
+                     href="mailto:infobluebee@gmail.com">infobluebee@gmail.com</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+         hamburger.classList.toggle("active");
+         navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+         hamburger.classList.remove("active");
+         navMenu.classList.remove("active");
+      }
+
+      /* Script for review Form */
+      function openForm() {
+         document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+         document.getElementById("myForm").style.display = "none";
+      }
+
+   </script>
+</body>
+
+</html>
